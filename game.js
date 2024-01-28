@@ -32,7 +32,7 @@ class GameScene extends Phaser.Scene {
     this.emitter;
   }
 
-  //Pre lading game assets
+  //Pre-loading game assets
   preload (){
     this.load.image ("bg", "./public/assets/background1.png");
     this.load.image ("player", "./public/assets/mushroomp.png");
@@ -40,7 +40,7 @@ class GameScene extends Phaser.Scene {
     this.load.image ("money", "./public/assets/money.png");
   }
 
-  //creating game functions
+  //Creating game functions
   create (){
     this.scene.pause("scene-game")
 
@@ -117,7 +117,7 @@ class GameScene extends Phaser.Scene {
     return Math.floor(Math.random() * 480);
   }
 
-  //Function when coins hit player
+  //Coin colisions and updating score
   targetHit (){
     this.target.setY (0);
     this.emitter.start();
