@@ -35,6 +35,22 @@ main {
   display: flex;
 }
 
+/* Weather DIV */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 47%;
+  top: 14%;
+  width: 100px;
+}
+.temp {
+  font-size: large;
+}
+
+
+/* Game Canvas */
 #gameCanvas {
   border: solid var(--accentColor);
   position: absolute;
@@ -51,6 +67,8 @@ main {
   padding: 200px;
 }
 
+
+/* Buttons*/
 #instructionsBtn {
   margin-left: 30%;
   background-color: var(--lightColor);

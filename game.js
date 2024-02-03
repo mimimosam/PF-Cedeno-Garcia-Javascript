@@ -4,6 +4,7 @@ import * as Swal from 'sweetalert2'
 
 window.Swal = Swal
 
+// Declaring variables
 let startBtn = document.querySelector('#startBtn');
 let instructionsBtn = document.querySelector ('#instructionsBtn');
 
@@ -148,7 +149,7 @@ const config ={
     default: "arcade",
     arcade: {
       gravity: {y:speedDown},
-      debug: true
+      debug: false
     }
   },
   scene: [GameScene]
